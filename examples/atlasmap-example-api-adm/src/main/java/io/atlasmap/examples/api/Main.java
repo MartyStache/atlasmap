@@ -45,11 +45,11 @@ public class Main {
         AtlasContext context = factory.createContext(url.toURI());
         AtlasSession session = context.createSession();
 
-        url = Thread.currentThread().getContextClassLoader().getResource("order.json");
+        url = Thread.currentThread().getContextClassLoader().getResource("source-xml-file.xml");
         String source = new String(Files.readAllBytes(Paths.get(url.toURI())));
         System.out.println("Source document:\n" + source);
 
-        session.setSourceDocument("JSONSchemaSource", source);
+        session.setSourceDocument("XMLSchemaSource", source);
         context.process(session);
         String targetDoc = (String) session.getTargetDocument("XMLInstanceSource");
 

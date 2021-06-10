@@ -1,0 +1,8 @@
+<Entities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source.xsd">
+	<Equipment ID="thisisaniduuid">
+		<Equipment.bch>thisisabchvalue</Equipment.bch>
+		<Equipment.r>hereisanrvalueand</Equipment.r>
+		<Equipment.Container resource="thisisaresourceuuid"/>
+		<Equipment.aggregate>thisisaboolean</Equipment.aggregate>
+	</Equipment>
+</Entities>
